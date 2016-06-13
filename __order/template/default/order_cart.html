@@ -1,0 +1,13 @@
+<h1>##{ORDER_CART_TITLE}</h1>
+<ul class="listcart">
+	<OKT:list id="meal"><li class="photo" style="background-image:url($${meal_photo});"><a name="item$${meal_row_index}" class="row"></a><div class="no">$${meal_no}.</div></li>
+	<li class="info">
+		<div class="title"><span class="qty">$${meal_count}</span>$${meal_name}</div>
+		<div class="formula">$${meal_formula}</div>
+		<div class="more">$${meal_flavor}$${meal_additional}</div></li>
+	<li class="operation"><a href="#" class="remove" onclick="return CHECK_TO_REMOVE('$${remove_confirm}', '$${remove_url}');">##{ORDER_CART_MEAL_REMOVE}</a><a href="$${dec_url}" class="dec">##{ORDER_CART_MEAL_DEC}</a><a href="$${inc_url}" class="inc">##{ORDER_CART_MEAL_INC}</a></li>
+	</OKT:list>
+</ul><br class="clear">
+
+<div class="carttotal">$${cart_total}</div>
+<div class="carttool"><a href="#" onclick="return CHECK_TO_REMOVE('##{ORDER_CART_REMOVE_ALL_CONFIRM}', '$${remove_all_url}');">##{ORDER_CART_REMOVE_ALL}</a></div>

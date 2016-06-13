@@ -1,0 +1,73 @@
+<h2>$${action_title}</h2>
+<form action="$${action_url}" method="post">
+<table class="input">
+	<tr>
+		<th class="item">##{BACK_ITEM_NAME}</th>
+		<th>##{BACK_ITEM_VALUE}</th>
+	</tr>
+	<tr class="r0">
+		<td colspan="2" class="section">##{BACK_CONFIG_FRONT_ORDER}</td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_ORDER_TO_KDS_SOUND}</td>
+		<td><select name="$${post_order_to_kds_sound}" size="1">$${options_order_to_kds_sound}</select></td>
+	</tr>
+	<tr class="r0">
+		<td colspan="2" class="section">##{BACK_CONFIG_FRONT_KITCHEN}</td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_AUTO_PRINT}</td>
+		<td><select name="$${post_kds_auto_print}" size="1">$${options_kds_auto_print}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_REFRESH_SECONDS}</td>
+		<td><input type="number" name="$${post_kds_refresh_seconds}" value="$${source_kds_refresh_seconds}" style="width:15%;"></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_ROWS_EACH_PAGE}</td>
+		<td><input type="number" name="$${post_kds_rows_each_page}" value="$${source_kds_rows_each_page}" style="width:8%;"></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_DISABLE_SOUND}</td>
+		<td><select name="$${post_kds_disable_sound}" size="1">$${options_kds_disable_sound}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_SOUND_VOLUME}</td>
+		<td><select name="$${post_kds_sound_volume}" size="1">$${options_kds_sound_volume}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_TIMEOUT_MINUTES}(0)</td>
+		<td><input type="number" name="$${post_kds_timeout_minutes_0}" value="$${source_kds_timeout_minutes_0}" style="width:8%;"></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_TIMEOUT_COLOR}(0)</td>
+		<td><input type="color" name="$${post_kds_timeout_color_0}" value="$${source_kds_timeout_color_0}" style="width:15%;"></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_TIMEOUT_MINUTES}(1)</td>
+		<td><input type="number" name="$${post_kds_timeout_minutes_1}" value="$${source_kds_timeout_minutes_1}" style="width:8%;"></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_TIMEOUT_COLOR}(1)</td>
+		<td><input type="color" name="$${post_kds_timeout_color_1}" value="$${source_kds_timeout_color_1}" style="width:15%;"></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_TIMEOUT_MINUTES}(2)</td>
+		<td><input type="number" name="$${post_kds_timeout_minutes_2}" value="$${source_kds_timeout_minutes_2}" style="width:8%;"></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_KDS_TIMEOUT_COLOR}(2)</td>
+		<td><input type="color" name="$${post_kds_timeout_color_2}" value="$${source_kds_timeout_color_2}" style="width:15%;"></td>
+	</tr>
+	<tr class="r0">
+		<td colspan="2" class="section">##{BACK_CONFIG_FRONT_HISTORY}</td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_HISTORY_KEEP_ROWS}</td>
+		<td><input type="number" name="$${post_history_keep_rows}" value="$${source_history_keep_rows}" style="width:15%;"></td>
+	</tr>
+	<tr class="r0">
+		<td colspan="2" class="submit"><input type="submit" value="##{BACK_SUBMIT_SAVE}"></td>
+	</tr>
+</table>
+</form>

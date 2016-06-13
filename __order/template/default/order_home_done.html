@@ -1,0 +1,26 @@
+<h1>##{ORDER_HOME_TITLE_DONE}</h1>
+<div class="listtable">
+<span>##{ORDER_FORM_LABEL_NUMBER}: #$${form_number}</span><span>##{ORDER_FORM_LABEL_TARGET}: $${form_table}</span>##{ORDER_FORM_LABEL_TIME}: $${form_time}<br>
+<span>##{ORDER_FORM_LABEL_PAY}: $$${form_pay}</span><span>##{ORDER_FORM_LABEL_TOTAL}: $$${form_total}</span>##{ORDER_FORM_LABEL_CHANGE}: $$${form_change}<br>
+##{ORDER_FORM_LABEL_MEMO}: $${form_memo}
+
+<table>
+	<tr>
+		<th width="60">##{ORDER_FORM_FIELD_NO}</th>
+		<th>##{ORDER_FORM_FIELD_DESCRIPTION}</th>
+		<th width="60">##{ORDER_FORM_FIELD_QTY}</th>
+		<th width="100">##{ORDER_FORM_FIELD_PRICE}</th>
+		<th width="100">##{ORDER_FORM_FIELD_AMOUNT}</th>
+		<th width="100">##{ORDER_FORM_FIELD_ACCUMULATE}</th>
+	</tr>
+	<OKT:list id="meal"><tr valign="top" class="r$${row_class}">
+		<td align="center">$${row_no}</td>
+		<td>$${meal_name}<div class="more">$${meal_flavor}$${meal_additional}</div></td>
+		<td align="right">$${meal_count}</td>
+		<td align="right">$${meal_price}</td>
+		<td align="right">$${meal_amount}</td>
+		<td align="right">$${meal_accumulate}</td>
+	</tr>
+	</OKT:list>
+</table>
+</div>

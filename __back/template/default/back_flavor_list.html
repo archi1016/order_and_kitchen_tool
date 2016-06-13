@@ -1,0 +1,14 @@
+<h2>$${page_current} / $${page_total}</h2>
+<table class="list">
+	<tr>
+		<th class="no">##{BACK_COLUMN_NO}</th>
+		<th>##{BACK_COLUMN_NAME}</th>
+		<th class="operation">##{BACK_COLUMN_OPERATION}</th>
+	</tr>
+	<OKT:list id="flavor"><tr class="r$${row_class}">
+		<td>$${row_no}</td>
+		<td>$${name}</td>
+		<td><a href="#" onclick="return CHECK_TO_REMOVE('$${remove_confirm}', '$${remove_url}');">##{BACK_ITEM_REMOVE}</a>##{BACK_ITEM_OPERATION_SPLIT}<a href="$${up_url}">##{BACK_ITEM_UP}</a>##{BACK_ITEM_OPERATION_SPLIT}<a href="$${down_url}">##{BACK_ITEM_DOWN}</a>##{BACK_ITEM_OPERATION_SPLIT}<a href="$${edit_url}">##{BACK_ITEM_MODIFY}</a><br>&nbsp;&nbsp;<a href="$${member_url}">##{BACK_ITEM_MEMBER}</a></td>
+	</tr>
+	</OKT:list>
+</table>

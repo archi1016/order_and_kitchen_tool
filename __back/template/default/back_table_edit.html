@@ -1,0 +1,20 @@
+<h2>$${action_title}</h2>
+<form action="$${action_url}" method="post"><input type="hidden" name="##{POST_ID}" value="$${source_id}">
+<table class="input">
+	<tr>
+		<th class="item">##{BACK_ITEM_NAME}</th>
+		<th>##{BACK_ITEM_VALUE}</th>
+	</tr>
+	<tr>
+		<td>##{BACK_TABLE_NAME}</td>
+		<td><input type="text" name="##{POST_NAME}" value="$${source_name}" style="width:20%;"></td>
+	</tr>
+	<tr>
+		<td>##{BACK_TABLE_ADDRESS}</td>
+		<td><input type="text" name="##{POST_ADDRESS}" value="$${source_address}" style="width:40%;"></td>
+	</tr>
+	<tr class="r0">
+		<td colspan="2" class="submit"><input type="submit" value="##{BACK_SUBMIT_SAVE}"></td>
+	</tr>
+</table>
+</form>

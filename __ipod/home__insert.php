@@ -1,0 +1,14 @@
+<?php
+
+if (!isset($the_operation)) exit();
+
+if (!CHECK_TMP_ID()) E_TO(ERROR_CODE_UNKNOW_ID);
+
+$target = RET_STR_POST(POST_ORDER_TARGET);
+if ('' == $target) E_TO(ERROR_CODE_UNKNOW_TABLE);
+
+CHANGE_TMP_TO_ORDER_FORM($target, false);
+		
+APEND_URL_ARGUMENT($THIS_WEB_URL, POST_ID, $tmp_row[TMP_ID]);
+APEND_URL_ARGUMENT($THIS_WEB_URL, ARGUMENT_OPERATION, OPERATION_DONE);
+P_TO($THIS_WEB_URL);

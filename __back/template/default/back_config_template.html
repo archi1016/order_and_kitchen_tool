@@ -1,0 +1,32 @@
+<h2>$${action_title}</h2>
+<form action="$${action_url}" method="post">
+<table class="input">
+	<tr>
+		<th class="item">##{BACK_ITEM_NAME}</th>
+		<th>##{BACK_ITEM_VALUE}</th>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_TEMPLATE_ORDER}</td>
+		<td><select name="$${post_order}" size="1">$${options_order}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_TEMPLATE_IPOD}</td>
+		<td><select name="$${post_ipod}" size="1">$${options_ipod}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_TEMPLATE_FRONT}</td>
+		<td><select name="$${post_front}" size="1">$${options_front}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_TEMPLATE_BACK}</td>
+		<td><select name="$${post_back}" size="1">$${options_back}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_TEMPLATE_ERROR}</td>
+		<td><select name="$${post_error}" size="1">$${options_error}</select></td>
+	</tr>
+	<tr class="r0">
+		<td colspan="2" class="submit"><input type="submit" value="##{BACK_SUBMIT_SAVE}"></td>
+	</tr>
+</table>
+</form>

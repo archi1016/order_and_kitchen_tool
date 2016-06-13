@@ -1,0 +1,10 @@
+<h1>$${meal_name}</h1>
+<form action="$${action_url}" method="post"><input type="hidden" name="##{POST_ID}" value="$${meal_id}">
+<div class="mealqty" style="background-image:url($${meal_photo_cart});">
+	<input type="text" id="mealqty" name="##{POST_COUNT}" value="1" class="qty" readonly><br><br>
+	<a href="#" class="dec" onclick="return DEC_MEAL_QTY();">##{IPOD_ORDER_MEAL_DEC}</a><a href="#" class="inc" onclick="return INC_MEAL_QTY();">##{IPOD_ORDER_MEAL_INC}</a>
+	<div class="btn"><input type="submit" value="##{IPOD_MEAL_BUY_SUBMIT}" class="btn"></div>
+</div>
+$${block_flavor}
+$${block_additional}
+</form>

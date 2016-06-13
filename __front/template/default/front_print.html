@@ -1,0 +1,9 @@
+<h1>$${form_number} / $${form_table}</h1>
+<h2>$${form_time}</h2>
+<ul>
+	<OKT:list id="meal"><li><span class="qty">$${meal_qty}</span><span class="item">$${meal_name}</span><br><OKT:list id="flavor"><span class="etc">$${meal_flavor}</span><br></OKT:list></li>
+	</OKT:list>
+</ul>
+<div class="cashier"><span class="total">##{FRONT_ORDER_FORM_LABEL_TOTAL}<br>$${form_total}</span><span class="pay">##{FRONT_ORDER_FORM_LABEL_PAY}<br>$${form_pay}</span><span class="change">##{FRONT_ORDER_FORM_LABEL_CHANGE}<br>$${form_change}</span></div>
+<div class="footer">##{THE_STORES_NAME}<br>##{THE_STORES_TELEPHONE}</div>
+<script>AUTO_PRINT('$${auto_print}', '$${print_label}');</script>

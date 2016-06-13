@@ -1,0 +1,27 @@
+body {
+	margin : 0;
+	-ms-text-size-adjust : none;
+	-webkit-text-size-adjust : none;
+}
+
+h1 {
+	margin : 0;
+	padding : 20px;
+	color : #FFFFFF;
+	background-color : #CC0000;
+}
+
+div.error {
+	margin : 20px;
+	padding : 20px;
+	font-size : 32px;
+	color : #660000;
+	background-color : #FFCCCC;
+	border-radius : 10px;
+}
+
+div.error button {
+	width : 120px;
+	padding : 5px 0;
+	font-size : 20px;
+}

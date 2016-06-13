@@ -1,0 +1,18 @@
+<dl class="listorderform">
+	<dt>
+		<span class="number">##{IPOD_ORDER_FORM_LABEL_NUMBER}: $${form_number}</span>
+		<span class="target">##{IPOD_ORDER_FORM_LABEL_TABLE}: $${form_table}</span>
+		$${form_mins} Mins+</span><br>
+		<span class="total">##{IPOD_ORDER_FORM_LABEL_TOTAL}: $${form_total}</span>
+		<span class="pay">##{IPOD_ORDER_FORM_LABEL_PAY}: $${form_pay}</span>
+		<span class="change">##{IPOD_ORDER_FORM_LABEL_CHANGE}: $${form_change}</span><br>
+		##{IPOD_ORDER_FORM_LABEL_TIME}: $${form_time}<br>
+		##{IPOD_ORDER_FORM_LABEL_MEMO}: $${form_memo}
+	</dt>
+	<dd>
+		<ul class="listordermeal">
+			<OKT:list id="meal"><li class="$${meal_status_class}"><span class="status">$${meal_status}</span><span class="qty">$${meal_qty}</span><span class="item">$${meal_name}</span><br><OKT:list id="flavor"><span class="etc">$${meal_flavor}</span><br></OKT:list></li>
+			</OKT:list>
+		</ul>
+	</dd>
+</dl>

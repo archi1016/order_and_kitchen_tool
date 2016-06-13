@@ -1,0 +1,20 @@
+<h2>$${action_title}</h2>
+<form action="$${action_url}" method="post">
+<table class="input">
+	<tr>
+		<th class="item">##{BACK_ITEM_NAME}</th>
+		<th>##{BACK_ITEM_VALUE}</th>
+	</tr>
+	<OKT:list id="section"><tr valign="top">
+		<td>$${category_name}</td>
+		<td><ul class="meal">
+			<OKT:list id="meal"><li onclick="CLICK_TO_CHECKED(this);" class="$${meal_class}"><input type="checkbox" name="##{POST_ID}[]" value="$${meal_id}" $${meal_checked}>$${meal_name}</li>
+			</OKT:list>
+		</ul><br class="clear"><br></td>
+	</tr>
+	</OKT:list>
+	<tr class="r0">
+		<td colspan="2" class="submit"><input type="submit" value="##{BACK_SUBMIT_SAVE}"></td>
+	</tr>
+</table>
+</form>

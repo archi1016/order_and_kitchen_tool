@@ -1,0 +1,28 @@
+<h1>##{FRONT_CHECKOUT_TITLE}</h1>
+<form action="$${action_url}" method="post">
+<h2>##{FRONT_CHECKOUT_TITLE_TABLE}</h2>
+<ul class="listcheckout">
+	<li class="targets">##{FRONT_CHECKOUT_LABEL_TABLE}: <select name="##{POST_ORDER_TARGET}" size="1">$${options_table}</select></li>
+</ul><br class="clear">
+	
+<h2>##{FRONT_CHECKOUT_TITLE_PAY}</h2>
+<ul class="listcheckout">
+	<li class="number">
+		<div>##{FRONT_CHECKOUT_LABEL_PAY}: <input type="text" id="orderpay" name="##{POST_ORDER_PAY}" value="0" class="pay" readonly></div>
+		<div>##{FRONT_CHECKOUT_LABEL_TOTAL}: <input type="text" id="ordertotal" name="##{POST_ORDER_TOTAL}" value="$${form_total}" class="total" readonly></div>
+		<div>##{FRONT_CHECKOUT_LABEL_CHANGE}: <input type="text" id="orderchange" name="##{POST_ORDER_CHANGE}" value="$${form_change}" class="change" readonly></div>
+	</li>
+	<li class="btns">
+		<div><button onclick="return SET_PAY_VALUE(this);">+1</button><button onclick="return SET_PAY_VALUE(this);">+5</button><button onclick="return SET_PAY_VALUE(this);">+10</button><button onclick="return SET_PAY_VALUE(this);">C</button></div>
+		<div><button onclick="return SET_PAY_VALUE(this);">+50</button><button onclick="return SET_PAY_VALUE(this);">+100</button><button onclick="return SET_PAY_VALUE(this);">+200</button></div>
+		<div><button onclick="return SET_PAY_VALUE(this);">+500</button><button onclick="return SET_PAY_VALUE(this);">+1000</button><button onclick="return SET_PAY_VALUE(this);">+2000</button></div>
+	</li>
+</ul><br class="clear">
+
+<h2>##{FRONT_CHECKOUT_TITLE_ETC}</h2>
+<ul class="listcheckout">
+	<li class="other">##{FRONT_CHECKOUT_LABEL_MEMO}: <input type="text" name="##{POST_ORDER_MEMO}" value="" class="memo"></li>
+</ul><br class="clear">
+
+<div class="formsubmit"><input type="submit" value="##{FRONT_CHECKOUT_SUBMIT}"></div>
+</form>

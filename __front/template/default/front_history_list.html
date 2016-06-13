@@ -1,0 +1,18 @@
+<ul class="listorderform">
+	<OKT:list id="form"><li><dl class="orderform">
+		<dt class="history">
+			<span class="number">#$${form_number}</span><span class="target">$${form_table}</span><span class="minutes">$${form_mins} Mins+</span><br>
+			<span class="total">##{FRONT_ORDER_FORM_LABEL_TOTAL}: $${form_total}</span><span class="pay">##{FRONT_ORDER_FORM_LABEL_PAY}: $${form_pay}</span><span class="change">##{FRONT_ORDER_FORM_LABEL_CHANGE}: $${form_change}</span><br>
+			<span class="memo">$${form_memo}</span>
+			<div class="formoperation">$${form_time_out}</div>
+		</dt>
+		<dd>
+			<OKT:list id="meal"><div class="done">
+				<span class="qty">$${meal_qty}</span>
+				<span class="item">$${meal_name}</span><br><OKT:list id="flavor"><span class="etc">$${meal_flavor}</span><br></OKT:list>
+			</div>
+			</OKT:list>
+		</dd>
+	</dl></li>
+	</OKT:list>
+</ul><br class="clear">

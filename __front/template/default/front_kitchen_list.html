@@ -1,0 +1,23 @@
+<ul class="listorderform">
+	<OKT:list id="form"><li><dl class="orderform">
+		<dt$${form_timeout_style}>
+			<span class="number">#$${form_number}</span><span class="target">$${form_table}</span><span class="minutes">$${form_mins} Mins+</span><br>
+			<span class="total">##{FRONT_ORDER_FORM_LABEL_TOTAL}: $${form_total}</span><span class="pay">##{FRONT_ORDER_FORM_LABEL_PAY}: $${form_pay}</span><span class="change">##{FRONT_ORDER_FORM_LABEL_CHANGE}: $${form_change}</span><br>
+			<span class="memo">$${form_memo}</span>
+			<div class="formoperation">
+				<a href="#" class="remove" onclick="return CHECK_TO_REMOVE('$${remove_confirm}', '$${remove_url}');">##{FRONT_KITCHEN_FORM_REMOVE}</a>
+				<a href="$${print_url}" target="_blank" class="print">##{FRONT_KITCHEN_FORM_PRINT}</a>
+				<a href="#" class="done" onclick="return CHECK_TO_REMOVE('$${done_confirm}', '$${done_url}');">##{FRONT_KITCHEN_FORM_DONE}</a>
+			</div>
+		</dt>
+		<dd>
+			<OKT:list id="meal"><div class="$${meal_status_class}">
+				<span class="status"><a href="$${status_url}" class="status">$${meal_status}</a></span>
+				<span class="qty">$${meal_qty}</span>
+				<span class="item">$${meal_name}</span><a href="#" onclick="return CHECK_TO_REMOVE('$${remove_confirm}', '$${remove_url}');" class="remove">##{FRONT_KITCHEN_ITEM_REMOVE}</a><br><OKT:list id="flavor"><span class="etc">$${meal_flavor}</span><br></OKT:list>
+			</div>
+			</OKT:list>
+		</dd>
+	</dl></li>
+	</OKT:list>
+</ul><br class="clear">

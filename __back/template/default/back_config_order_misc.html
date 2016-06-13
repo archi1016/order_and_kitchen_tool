@@ -1,0 +1,24 @@
+<h2>$${action_title}</h2>
+<form action="$${action_url}" method="post">
+<table class="input">
+	<tr>
+		<th class="item">##{BACK_ITEM_NAME}</th>
+		<th>##{BACK_ITEM_VALUE}</th>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_ORDER_DEMO_MODE}</td>
+		<td><select name="$${post_demo_mode}" size="1">$${options_demo_mode}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_ORDER_DISABLE_CLIENT_ORDER}</td>
+		<td><select name="$${post_disable_client_order}" size="1">$${options_disable_client_order}</select></td>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_ORDER_DISABLE_RANDOM_MEALS}</td>
+		<td><select name="$${post_disable_random_meals}" size="1">$${options_disable_random_meals}</select></td>
+	</tr>
+	<tr class="r0">
+		<td colspan="2" class="submit"><input type="submit" value="##{BACK_SUBMIT_SAVE}"></td>
+	</tr>
+</table>
+</form>

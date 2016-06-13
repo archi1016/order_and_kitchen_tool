@@ -1,0 +1,659 @@
+body {
+	margin : 0;
+	font-size : 20px;
+	background-color : #666666;
+	-ms-text-size-adjust : none;
+	-webkit-text-size-adjust : none;
+}
+
+h1 {
+	margin : 0;
+	padding : 0 0 0 10px;
+	line-height : 40px;
+	font-size : 28px;
+	color : #993300;
+	background-color : #FFDD66;
+	border-style : solid;
+	border-width : 2px 0;
+	border-color : #FFEECC #000000 #993300 #000000;
+}
+
+form {
+	margin : 0;
+	padding : 0;
+}
+
+input,select,button,textarea {
+	margin : 0;
+	padding : 2px;
+	font-size : 20px;
+}
+
+a {
+	display : inline-block;
+	text-decoration : none;
+}
+
+span {
+	display : inline-block;
+}
+
+img {
+	border-width : 0;
+}
+
+ul {
+	margin : 0;
+	padding : 0;
+	list-style-type : none;
+}
+
+ul li {
+	display : block;
+	font-size : 36px;
+	font-weight : bold;
+	border-style : solid;
+	border-width : 0 0 2px 0;
+	border-color : #CCCCCC;
+	background-repeat : no-repeat;
+	background-position : 0 0;
+}
+
+ul li.paused {
+	text-decoration : line-through;
+	background-color : #DDDDDD;
+}
+
+ul li.current {
+	font-style : italic;
+	background-color : #FFCCCC;
+}
+
+ul li.checked {
+	font-style : italic;
+	background-color : #95B3D7;
+}
+
+ul a {
+	white-space : nowrap;
+	overflow : hidden;
+	text-overflow : ellipsis;
+}
+
+br.clear {
+	clear : both;
+}
+
+div.content {
+	margin : 0 auto;
+	width : 640px;
+	background-color : #FFFFFF;
+}
+
+div.stores {
+	padding : 10px 0 5px 10px;
+	font-size : 36px;
+	font-weight : bold;
+	font-style : italic;
+	color : #FFFFFF;
+	background-color : #4F81BD;
+}
+
+div.logon {
+	margin : 40px auto 0 auto;
+	padding : 40px 0 0 0;
+	width : 520px;
+	text-align : center;
+	background-color : #DCE6F1;
+	border-radius : 20px;
+}
+
+
+div.home {
+	margin : 0 auto;
+	width : 640px;
+	background-color : #FFFFFF;
+}
+
+div.titlebar {
+	position : relative;
+	height : 120px;
+}
+
+div.titlebar img.logo {
+	position : absolute;
+	left : 20px;
+	top : 20px;
+	width : 80px;
+	height : 80px;
+}
+
+div.titlebar div.info {
+	position : absolute;
+	left : 120px;
+	top : 20px;
+}
+
+
+div.footer {
+	margin : 20px 0 0 0;
+	position : relative;
+	height : 120px;
+	border-style : dotted;
+	border-width : 3px 0 0 0;
+	border-color : #CCCCCC;
+}
+
+div.footer img.logo {
+	position : absolute;
+	left : 20px;
+	top : 20px;
+	width : 80px;
+	height : 80px;
+}
+
+div.footer div.info {
+	position : absolute;
+	left : 120px;
+	top : 20px;
+}
+
+div.cancel {
+	padding : 20px 0;
+	text-align : center;
+}
+
+div.cancel a {
+	color : #999999;
+}
+
+ul.list li {
+	line-height : 80px;
+}
+
+ul.list a {
+	padding : 0 0 0 60px;
+	width : 520px;
+	color : #000000;
+}
+
+
+span.arrow {
+	color : #666666;
+}
+
+
+div.backtitle {
+	position : relative;
+	line-height : 64px;
+	text-align  :center;
+	font-size : 36px;
+	color : #FFFFFF;
+	background-color : #4F81BD;
+	border-style : solid;
+	border-width : 2px 0;
+	border-color : #95B3D7 #000000 #365F91 #000000;
+}
+
+div.backbtn {
+	position : absolute;
+	left : 10px;
+	top : 10px;
+	line-height : 40px;
+	font-size : 28px;
+}
+
+div.backbtn a {
+	padding : 0 10px 0 20px;
+	font-weight : bold;
+	color : #FFFFFF;
+	background-color : #365F91;
+	border-style : solid;
+	border-width : 2px;
+	border-color : #FFFFFF;
+	border-radius : 20px 4px 4px 20px;
+}
+
+div.notice {
+	padding : 10px;
+	font-size : 28px;
+	line-height : 160%;
+}
+
+div.dataisempty {
+	padding : 40px 0 300px 80px;
+	color : #CCCCCC;
+	font-size : 36px;
+}
+
+
+dl.listorderform {
+	margin : 0;
+	padding : 0;
+	font-size : 28px;
+}
+
+dl.listorderform dt {
+	padding : 10px 0 10px 10px;
+	border-style : solid;
+	border-width : 0 0 4px 0;
+	border-color : #999999;
+}
+
+dl.listorderform dd {
+	margin : 0;
+	padding : 0;
+}
+
+dt span {
+	width : 190px;
+}
+
+dt span.number {
+	color : #C35617;
+}
+
+dt span.target {
+	color : #AA0000;
+}
+
+dt span.pay {
+	color : #006699;
+}
+
+dt span.total {
+	color : #007700;
+}
+
+dt span.change {
+	color : #AA0077;
+}
+
+
+
+dd span.status {
+	width : 90px;
+	text-align : center;
+}
+
+dd span.qty {
+	margin : 0 0 0 10px;
+	width : 60px;
+}
+
+dd span.etc {
+	margin : 0 0 0 200px;
+	font-style : italic;
+}
+
+dd li.queue {
+	color : #FFFFFF;
+	background-color : #AA0000;
+}
+
+dd li.cooking {
+	color : #FFFFFF;
+	background-color : #007700;
+}
+
+ul.listordermeal li {
+	padding : 5px 0;
+}
+
+
+div.ordertab {
+	padding : 10px 0 0 0;
+	background-color : #4F81BD;
+}
+
+div.ordertab a {
+	margin : 0 0 0 10px;
+	padding : 10px 0;
+	width : 200px;
+	text-align  :center;
+	font-size : 28px;
+	font-weight : bold;
+	color : #FFFFFF;
+	border-radius : 20px 20px 0 0;
+}
+
+div.ordertab a.current {
+	color : #000000;
+	background-color : #FFFFFF;
+}
+
+
+
+
+
+ul.listcategory li {
+	line-height : 75px;
+}
+
+ul.listcategory a {
+	padding : 0 0 0 120px;
+	width : 460px;
+	color : #000000;
+}
+
+ul.listcategory {
+	margin : 0;
+	padding : 0;
+	list-style-type : none;
+}
+
+ul.listcategory li {
+	line-height : 75px;
+}
+
+ul.listcategory a {
+	padding : 0 0 0 120px;
+	width : 460px;
+	color : #000000;
+}
+
+ul.listmeal li {
+	line-height : 75px;
+}
+
+ul.listmeal span.price {
+	width : 100px;
+}
+
+ul.listmeal a {
+	padding : 0 0 0 120px;
+	width : 360px;
+	color : #000000;
+}
+
+
+div.mealispaused {
+	text-align : center;
+	padding : 20px 0;
+	font-size : 28px;
+}
+
+
+
+ul.listflavor li {
+	float : left;
+	margin : 4px 0 0 4px;
+	width : 310px;
+	line-height : 74px;
+	border-width : 2px;
+	border-color : #CCCCCC;
+	border-radius : 6px;
+	background-position : 5px 5px;
+}
+
+ul.listflavor input {
+	display : none;
+}
+
+ul.listflavor a {
+	display : block;
+	padding : 0 0 0 80px;
+	width : 190px;
+	font-size : 28px;
+	color : #000000;
+}
+
+ul.listadditional li {
+	float : left;
+	margin : 4px 0 0 4px;
+	width : 628px;
+	line-height : 75px;
+	border-width : 2px;
+	border-color : #CCCCCC;
+	border-radius : 6px;
+}
+
+ul.listadditional input {
+	display : none;
+}
+
+ul.listadditional a {
+	display : block;
+	padding : 0 0 0 110px;
+	width : 458px;
+	font-size : 28px;
+	color : #000000;
+}
+
+div.mealqty {
+	position : relative;
+	padding : 10px 0 0 170px;
+	height : 150px;
+	background-repeat : no-repeat;
+	background-position : 0 0;
+}
+
+div.mealqty div.btn {
+	position : absolute;
+	top : 10px;
+	right : 10px;
+}
+
+div.mealqty input.qty {
+	width : 200px;
+	text-align : center;
+	font-size : 36px;
+	color : #770077;
+}
+
+div.mealqty input.btn {
+	width : 160px;
+	padding : 10px 0;
+	font-size : 20px;
+}
+
+div.mealqty a {
+	margin : 0 0 0 20px;
+	width : 80px;
+	line-height: 60px;
+	text-align : center;
+	font-weight : bold;
+	font-size : 48px;
+	color : #FFFFFF;
+	border-radius : 6px;
+}
+
+div.mealqty a.dec {
+	background-color : #CC6600;
+}
+
+div.mealqty a.inc {
+	background-color : #007700;
+}
+
+
+ul.listcart li {
+	float : left;
+	height : 160px;
+	font-size : 20px;
+}
+
+ul.listcart li.photo {
+	width : 160px;
+}
+
+ul.listcart li.info {
+	width : 400px;
+}
+
+ul.listcart li.operation {
+	width : 80px;
+}
+
+ul.listcart a {
+	text-align : center;
+	font-size : 28px;
+	color : #FFFFFF;
+}
+
+ul.listcart a.row {
+	display : inline;
+}
+
+ul.listcart a.remove {
+	margin : 0 0 0 10px;
+	width : 32px;
+	line-height : 32px;
+	background-color : #AA0000;
+	border-style : solid;
+	border-width : 4px;
+	border-color : #FFFFFF;
+	border-radius : 20px;
+}
+
+ul.listcart a.inc {
+	display : block;
+	line-height : 80px;
+	font-size : 60px;
+	background-color : #007700;
+}
+
+ul.listcart a.dec {
+	display : block;
+	line-height : 80px;
+	font-size : 60px;
+	background-color : #CC6600;
+}
+
+ul.listcart div.no {
+	padding : 0 10px;
+	line-height : 40px;
+	text-align : right;
+	font-size : 28px;
+	color : #FFFFFF;
+	background-color : rgba(0, 0, 0, 0.5);
+}
+
+ul.listcart div.title {
+	padding : 0 0 0 10px;
+	line-height : 40px;
+	font-size : 28px;
+	white-space : nowrap;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	background-color : #E0E0E0;
+}
+
+ul.listcart span.qty {
+	width : 50px;
+	color : #CC0000;
+}
+
+ul.listcart div.more {
+	padding : 0 0 0 90px;
+	font-style : italic;
+}
+
+ul.listcart div.formula {
+	text-align : right;
+	padding : 0 20px 0 0;
+	line-height : 36px;
+}
+
+
+div.carttotal {
+	text-align : center;
+	line-height : 80px;
+	font-size : 40px;
+	font-weight : bold;
+	color : #AA0000;
+}
+
+div.carttool {
+	padding : 10px;
+}
+
+div.carttool a {
+	display : inline-block;
+	margin : 0 20px 0 0;
+	padding : 10px 0;
+	width : 160px;
+	text-align : center;
+	font-weight : bold;
+	color : white;
+	background-color : #773377;
+}
+
+
+ul.listcheckout li {
+	float : left;
+	margin : 10px 0 0 10px;
+	font-size : 20px;
+	border-width : 0;
+}
+
+ul.listcheckout li.targets {
+	width : 410px;
+}
+
+ul.listcheckout li.number {
+	width : 200px;
+}
+
+ul.listcheckout li.btns {
+	width : 410px;
+}
+
+ul.listcheckout li.other {
+	width : 410px;
+}
+
+ul.listcheckout li.submit {
+	width : 200px;
+	text-align : right;
+}
+
+ul.listcheckout select {
+	font-size : 36px;
+}
+
+ul.listcheckout input {
+	width : 100px;
+	text-align : right;
+	font-size : 36px;
+}
+
+ul.listcheckout input.pay {
+	color : #AA0000;
+}
+
+ul.listcheckout input.total {
+	color : #0066CC;
+}
+
+ul.listcheckout input.change {
+	color : #007700;
+}
+
+ul.listcheckout input.memo {
+	width : 240px;
+	text-align : left;
+}
+
+ul.listcheckout input.btn {
+	width : 120px;
+	padding : 10px 0;
+	text-align : center;
+	font-size : 20px;
+}
+
+ul.listcheckout button {
+	margin : 0 10px 0 0;
+	width : 90px;
+	height : 50px;
+	font-size : 20px;
+}
+
+ul.listcheckout div {
+	height : 60px;
+}
+
+div.searchtool {
+	padding : 10px;
+	text-align : right;
+}

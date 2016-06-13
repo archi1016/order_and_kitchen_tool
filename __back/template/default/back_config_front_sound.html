@@ -1,0 +1,29 @@
+<h2>##{BACK_CONFIG_SOUND_TITLE}</h2>
+<div class="listen">
+<input type="range" id="pos" value="0" min="0" max="600" onchange="document.getElementById('player').currentTime=this.value;"><br>
+##{BACK_CONFIG_SOUND_VOLUME}: <select id="vol" size="1" onchange="document.getElementById('player').volume=this.value;">$${options_volume}</select>
+<button onclick="document.getElementById('player').pause();">##{BACK_CONFIG_SOUND_PAUSE}</button>
+<button onclick="document.getElementById('player').play();">##{BACK_CONFIG_SOUND_PLAY}</button>
+<audio id="player" preload="auto"
+	oncanplay="document.getElementById('pos').max=this.duration;"
+	ontimeupdate="document.getElementById('pos').value=this.currentTime;"
+	ondurationchange="this.volume=document.getElementById('vol').value;"
+><source src="$${mp3_file}?##{RANDOM_STRING}" type="audio/mp3"></audio>
+</div>
+
+<h2>$${action_title}</h2>
+<form action="$${action_url}" method="post" enctype="multipart/form-data">
+<table class="input">
+	<tr>
+		<th class="item">##{BACK_ITEM_NAME}</th>
+		<th>##{BACK_ITEM_VALUE}</th>
+	</tr>
+	<tr>
+		<td>##{BACK_CONFIG_SOUND_ORDER_FORM}</td>
+		<td><input type="file" name="$${mp3_order_form}"> (##{BACK_CONFIG_SOUND_ORDER_FORM_DESCRIPTION})</td>
+	</tr>
+	<tr class="r0">
+		<td colspan="2" class="submit"><input type="submit" value="##{BACK_SUBMIT_UPLOAD}"></td>
+	</tr>
+</table>
+</form>
